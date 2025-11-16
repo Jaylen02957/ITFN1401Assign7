@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaylen Miller">
+    <meta name="description" content="A website for people to create their own roleplaying worlds and participate in DND over the internet, aimed to make DND feel like a video game. Keywords: Roleplay, DND, Fantasy">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=VT323&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <style>
+        img {
+            width: 100%; 
+        }
+
+        @media all and (max-width: 612px) {
+            img {
+                width: 100%;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                background-color: darkgray;
+            }
+        }
+    </style>
+</head>
+<body onload="showLastModified()">
+    <header>
+    <!--Created by Jaylen Miller!-->
+    <h1 class="index">Worldforger</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">
+                    Sign Up
+                </a></li>
+                <li><a href="create.html">
+                    Create
+                </a></li>
+                <li><a href="continue.html">
+                    Continue
+                </a></li>
+                <li><a href="search.html">
+                    Search
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <div>
+            <article>
+                <h4>What's this site about?</h4>
+                <p>This is a website for making your own DND worlds. It will automatically do skill rolling, stats, and let you type out your roleplay with your friends online. You can start with the create button to begin making your roleplay, continue if you have already made one, or even search if you're interested in joining an existing one!</p>
+                <img src = "https://media.istockphoto.com/id/688410346/vector/chinese-style-fantasy-scenes.jpg?s=612x612&w=0&k=20&c=r3skS5InspYQ7EqUCCzUzU3QHcwRwD6mNRbDpP8sIG4=" height="614" width="1038" alt="Floating Islands"> 
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Email: jmiller104@student.clayton.edu</p>
+        <p>November 2nd 2025</p>
+        <div id="last-modified"></div>
+    </footer>
+</body>
+</html>

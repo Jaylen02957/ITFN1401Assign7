@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(41, 1, 1);
+}
+h1, h4, p {
+    /* changes font to VT323, changes color to antique white, added letter spacing */
+    font-family: 'VT323', monospace;
+    color: antiquewhite;
+    letter-spacing: 3px
+}
+nav a, li, form {
+    font-family: 'Source Code Pro', monospace;
+    color: antiquewhite;
+    letter-spacing: 3px;
+    line-height: 1;   /* resets any odd spacing */
+    text-decoration: none;
+    margin-left: 15px;
+}
+nav{
+    float: right;
+    font-size: 1.0em;
+}
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 0.3em;
+}
+h4, p {
+    /* centers the text to properly align in the middle.*/
+    text-align: center;
+}
+img {
+    /* centers the image to properly align in the middle.*/
+    display: block;
+    margin: 0 auto;
+}
+header {
+    background-color: rgb(77, 77, 77);
+    border-radius: 0.625em;
+    box-shadow: 0.3125em 0.3125em 0.3125em rgb(41, 1, 1)
+}
+header {
+    display: flex;  /*turns the header into a "flex" allowing me to properly align my navigation */                
+    justify-content: space-between; /* pushes the header left, and nav right, justify-content refers to alignment of items on their main axis */
+    align-items: flex-start;        /* aligns the text to the top, this is alignment of cross axis */
+    padding: 10px 20px;             
+}
+header h1 {
+    margin: 0; 
+    /* I removed the default margin on the heading so it'll line up properly. */
+}
+.login-box {
+background-color: rgb(97, 97, 97);
+padding: 2rem;
+border-radius: 10px;
+width: 350px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+h1.lh {
+color: antiquewhite;
+text-align: center;
+}
+input.input-box {
+    width: 100%;
+    height: 3.5vh;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid  rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+/* Animation Styles */
+
+li:hover {
+    text-shadow:
+    0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+}
